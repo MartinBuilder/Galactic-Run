@@ -12,7 +12,8 @@ public class Movement : MonoBehaviour {
 	void Update ()
     {
         //Walk forward
-        var z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
+        var z = /*Input.GetAxis("Vertical") * */Time.deltaTime * 10.0f;
+        var y = Input.GetAxis("Horizontal") * Time.deltaTime * 5.0f;
 
         //Jump
         if (Input.GetKey(KeyCode.Space))
@@ -32,6 +33,6 @@ public class Movement : MonoBehaviour {
             Debug.Log("RIGHT");
         }
 
-        transform.Translate(0, 0, z);
+        transform.Translate(y, 0, z);
     }
 }
