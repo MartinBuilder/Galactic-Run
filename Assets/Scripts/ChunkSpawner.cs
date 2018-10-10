@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ChunkSpawner : MonoBehaviour 
 {
+    /*
     [SerializeField]
     private LevelChunk[] _chunks;
 
@@ -47,4 +48,5 @@ public class ChunkSpawner : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawLine(new Vector3(_spawnThreshold, -5, 0), new Vector3(_spawnThreshold, 5, 0));
 	}
+    */
 }
