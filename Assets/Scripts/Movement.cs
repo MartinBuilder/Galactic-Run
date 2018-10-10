@@ -13,13 +13,13 @@ public class Movement : MonoBehaviour {
     {
         //Walk forward
         var z = Time.deltaTime * 10.0f;
-        var y = Input.GetAxis("Horizontal") * Time.deltaTime * 5.0f;
+        var x = Input.GetAxis("Horizontal") * Time.deltaTime * 5.0f;
 
         //Jump
         if (Input.GetKey(KeyCode.Space))
         {
-            Debug.Log("UP");
+            transform.Translate(x, 1, z);
         }
-        transform.Translate(y, 0, z);
+        transform.Translate(x, 0, z);
     }
 }
