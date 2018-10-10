@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65748356135918284}
   - component: {fileID: 114744777645059060}
   m_Layer: 0
-  m_Name: Floor1
+  m_Name: LevelChunk
   m_TagString: LevelChunk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,6 +108,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e7f6acb997bea44a697809932ee1fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _chunks:
-  - {fileID: 0}
-  _spawnThreshold: 1
