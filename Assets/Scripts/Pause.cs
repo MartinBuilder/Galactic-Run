@@ -14,7 +14,7 @@ public class Pause : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             if (Time.timeScale == 1.0f)
-                Time.timeScale = 0.002f;
+                Time.timeScale = 0.0000000001f;
             else
                 Time.timeScale = 1.0f;
             // Adjust fixed delta time according to timescale
