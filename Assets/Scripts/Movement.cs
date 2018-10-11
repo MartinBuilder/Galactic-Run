@@ -15,6 +15,7 @@ public class Movement : MonoBehaviour {
     {
         isGrounded = true;
     }
+
     void OnTriggerExit(Collider other)
     {
         isGrounded = false;
