@@ -2,30 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoadGenerator : MonoBehaviour {
-
+public class RoadGenerator : MonoBehaviour
+{
     private float spawnz = -100f;
     public GameObject[] prefabs;
     private float RoadLength = 100f;
-    private int amountOfRoads = 1;
+    private int amountOfRoads = 5;
+    public int amountOfChunks;
 
     private List<GameObject> roadsList;
     private Transform playertransform;
-
-	// Use this for initialization
-	void Start () {
+    
+	void Start ()
+    {
         roadsList = new List<GameObject>();
         playertransform = GameObject.FindGameObjectWithTag("Player").transform;
-		
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
+        int num = Random.Range(0, amountOfChunks);
+
         if (playertransform.position.z > (spawnz - amountOfRoads * RoadLength))
         {
-            SpawnRoad(0);
+            SpawnRoad(num);
         }
-		
 	}
 
     void SpawnRoad(int prefaIndex)

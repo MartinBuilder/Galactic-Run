@@ -6,11 +6,7 @@ public class Movement : MonoBehaviour {
 
     private bool isGrounded;
 
-	void Start ()
-    {
-
-    }
-
+    //Check if object is grounded
     void OnTriggerEnter(Collider other)
     {
         isGrounded = true;
